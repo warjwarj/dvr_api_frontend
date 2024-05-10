@@ -1,4 +1,6 @@
-const URL = "ws://192.168.1.127:9046";
+import 'dotenv/config'
+
+const URL = process.env.DVR_API_API_ENDPOINT;
 
 class ApiSvrConnection {
     constructor(){

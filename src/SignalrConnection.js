@@ -1,6 +1,7 @@
 ﻿import * as signalR from "@microsoft/signalr"
+import 'dotenv/config'
 
-const HUB_URL = "http://192.168.1.127:5234/devicesHub"
+const HUB_URL = process.env.DVR_API_SIGNALR_DEVICES_ENDPOINT;
 
 class SignalrConnection {
     constructor() {
